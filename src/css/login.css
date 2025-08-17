@@ -1,0 +1,45 @@
+body {
+    padding-left: 32px;
+    padding-top: 100px;
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #F4F6F5, #F0FFF4);
+    margin: 0;
+}
+
+input {
+    height: 48px; width: 400px; 
+    border-radius: 10px; border: 1.5px solid #222222;
+    margin-right: 30px;
+    padding-left: 12PX;
+    transition: color 0.5s ease;
+    background-color: #F0FFF4;
+}
+
+input ::selection {
+    border: 1.5px solid #00C853;
+}
+
+button {
+    height: 48px; width: 400px; 
+    margin-top: 24px;
+    border-radius: 10px;
+    transition: color 0.5s ease;
+}
+
+.btn {
+    background-color: #00C853;
+    color: white;
+}
+
+button :hover {
+    background-color: #00c8534d;
+}
+
+.extra-links {
+    margin-top: 16px;
+}
+
+a {
+    text-decoration: none;
+    color: #00C853;
+}
