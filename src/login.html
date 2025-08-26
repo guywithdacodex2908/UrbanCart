@@ -6,11 +6,10 @@
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Login Page</title>
-        <link rel="stylesheet" href="login.css">
-    </head>
-<body>
-
-    <style>
+       <link rel="stylesheet" href="css/login.css">
+<link rel="stylesheet" href="css/styles.css">
+    
+        <style>
   body, p {
     font-family: 'Open Sans', sans-serif;
   }
@@ -28,24 +27,34 @@
     .custom-navbar .navbar-brand {
       color: #222222 !important;
     }
-
     
 </style> 
+      </head>
+<body>
+
+
 
  <h2>Welcome back! Enter your username and password to continue</h2>
 
         <form method="get">
-            <p>Username/E-mail</p>
-    <input type="text" label="username-or-email" placeholder="Enter your username/email">
-    <input type="password" label="password" placeholder="Enter your password"> 
-          <!-- Still trying to figure this out
+
+          <div class="login-form">
+           <div id="username"> <p>Username/E-mail</p>
+            <input type="text" label="username-or-email" placeholder="Enter your username/email">
+   </div>
+           <div id="password"> 
+            <p>Password</p>
+            <input type="password" label="password" placeholder="Enter your password"> 
+         </div>
+         </div>
+            <!-- Still trying to figure this out
     Remember me<input type="radio"> -->
 <div class="extra-links">
   <a href="#">Forgot Password</a>
   
 </div>
     <br>
-    <button class="btn">Login</button>
+    <button class="btn" type="submit">Login</button>
     
         </form>
 </body>
