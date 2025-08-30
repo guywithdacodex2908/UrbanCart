@@ -26,20 +26,116 @@ input ::selection {
     border: 1.5px solid #00C853;
 }
 
-button {
+/* Input focus */
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+  outline: none; /* remove ugly default outline */
+  border-color: #28a745; /* green highlight */
+  box-shadow: 0 0 6px rgba(40, 167, 69, 0.5); /* soft green glow */
+}
+
+/* Input fields */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  transition: all 0.3s ease; /* smooth transition */
+}
+
+input[type="text"]:hover,
+input[type="email"]:hover,
+input[type="password"]:hover,
+input[type="tel"]:hover {
+  border-color: #00C853; /* highlight border on hover */
+  box-shadow: 0 0 5px #00C853; /* soft glow */
+}
+
+/* Buttons */
+.btn {
     height: 48px; width: 400px; 
     margin-top: 24px;
     border-radius: 10px;
-    transition: color 0.5s ease;
-}
-
-.btn {
+    transition: color 0.3s ease;
     background-color: #00C853;
     color: white;
 }
 
-button :hover {
-    background-color: #00c8534d;
+button:hover {
+  background-color: #2E8B57; /* darker blue on hover */
+  transform: translateY(-2px); /* slight lift */
+}
+
+/* Links (like "Forgot Password") */
+a {
+  color: #00C853;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #00C853;/* Input focus */
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+  outline: none; /* remove ugly default outline */
+  border-color: #28a745; /* green highlight */
+  box-shadow: 0 0 6px rgba(40, 167, 69, 0.5); /* soft green glow */
+}
+
+/* Input fields */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  transition: all 0.3s ease; /* smooth transition */
+}
+
+input[type="text"]:hover,
+input[type="email"]:hover,
+input[type="password"]:hover,
+input[type="tel"]:hover {
+  border-color: #00C853; /* highlight border on hover */
+  box-shadow: 0 0 5px #00C853; /* soft glow */
+}
+
+/* Buttons */
+
+.btn {
+    height: 48px; width: 400px; 
+    margin-top: 24px;
+    border-radius: 10px;
+    transition: color 0.3s ease;
+    background-color: #00C853;
+    color: white;
+}
+
+button {
+  background-color: #00C853;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #2E8B57; /* darker blue on hover */
+  transform: translateY(-2px); /* slight lift */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Links (like "Forgot Password") */
+a {
+  color: #00C853;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #2E8B57;
+  text-decoration: underline;
+};
+  text-decoration: none;
 }
 
 .extra-links {

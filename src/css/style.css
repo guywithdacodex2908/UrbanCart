@@ -1,0 +1,52 @@
+/* ====== MOBILE (phones, portrait) ====== */
+@media (max-width: 600px) {
+  .login-form {
+    flex-direction: column;
+    width: 90%;
+  }
+
+  .login-form input,
+  .login-form button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
+/* ====== TABLET PORTRAIT (601px–900px) ====== */
+@media (min-width: 601px) and (max-width: 900px) {
+  .login-form {
+    flex-direction: column;
+    width: 70%;
+  }
+
+  .login-form input,
+  .login-form button {
+    width: 100%;
+    margin-bottom: 12px;
+  }
+}
+
+/* ====== TABLET LANDSCAPE (901px–1200px) ====== */
+@media (min-width: 901px) and (max-width: 1200px) {
+  .login-form {
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    width: 80%;
+  }
+
+  .login-form input,
+  .login-form button {
+    flex: 1;
+  }
+}
+
+/* ====== DESKTOP (default >1200px) ====== */
+.login-form {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 25px;
+  width: 60%;
+  margin: 0 auto;
+}

@@ -1,0 +1,168 @@
+body {
+    padding-left: 32px;
+    padding-top: 100px;
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #F4F6F5, #F0FFF4);
+    margin: 0;
+}
+
+.btn {
+    height: 48px; width: 400px; 
+    margin-top: 32px;
+    border-radius: 10px;
+    transition: color 0.3s ease;
+    background-color: #00C853;
+    color: white;
+}
+
+.btn :hover {
+    background-color: #00c8534d;
+}
+
+/* Registration Form */
+.register-form {
+  /*width: 400px;  adjust as needed */
+  
+  border-radius: 10px;
+
+   /* display: flex;
+    flex-direction: row;
+    align-items: flex-start; */
+    margin-top: 24px;
+
+ /* background: #f8f9fa;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1); */
+}
+
+input {
+    height: 48px; width: 400px; 
+    border-radius: 10px; border: 1.5px solid #222222;
+    margin-right: 30px;
+    padding-left: 12PX;
+    transition: color 0.5s ease;
+    background-color: #F0FFF4;
+}
+
+input :hover {
+    background-color: #d4ffe6;
+}
+
+/*.form-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 24px;
+    max-width: 800px;
+} */
+
+/*.form-container {
+    display: flex;
+  gap: 20px; /* spacing between fields in the same row *
+  margin-bottom: 12px; /* spacing between rows *
+} 
+*/
+
+/*.form-row input {
+  flex: 1; /* fields in a row will split space equally *
+} */
+
+.password, .user-info, .user-name {
+     display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-top: 24px;
+}
+
+p {
+    font-weight: 600;
+}
+
+/* Button styling */
+
+/* 📱 Mobile responsiveness */
+@media (max-width: 768px) {
+  .row {
+    flex-direction: column;
+  }
+}
+
+/* Input focus */
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+  outline: none; /* remove ugly default outline */
+  border-color: #28a745; /* green highlight */
+  box-shadow: 0 0 6px rgba(40, 167, 69, 0.5); /* soft green glow */
+}
+
+/* Input fields */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  transition: all 0.3s ease; /* smooth transition */
+}
+
+input[type="text"]:hover,
+input[type="email"]:hover,
+input[type="password"]:hover,
+input[type="tel"]:hover {
+  border-color: #00C853; /* highlight border on hover */
+  box-shadow: 0 0 5px #00C853; /* soft glow */
+}
+
+/* Buttons Styling */
+button {
+  background-color: #00C853;
+  color: white;
+  border: none;
+  margin-top: 24px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #2E8B57; /* darker blue on hover */
+  transform: translateY(-2px); /* slight lift */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Links (like "Forgot Password") */
+a {
+  color: #007BFF;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+
+/* Default: Desktop & Tablet Landscape (2 columns) */
+.form-row {
+  display: flex;
+  flex-direction: row;
+  gap: 20px; /* spacing between columns */
+}
+
+.form-row .form-group {
+  flex: 1; /* equal width columns */
+}
+
+/* Tablet Portrait & Mobile: stack fields */
+@media (max-width: 768px) {
+  .form-row {
+    flex-direction: column; /* stack */
+    gap: 15px;
+  }
+
+  .form-row .form-group {
+    width: 100%; /* full width each */
+  }
+
+  button {
+    width: 100%; /* button also full width */
+  }
+}
